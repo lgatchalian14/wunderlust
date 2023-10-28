@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="author" content="Levin Gatchalian">
@@ -28,11 +28,11 @@
                 <h2>Majorca</h2>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. 
                     The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-                <img src="images/majorca-waves.png">
-                <img src="images/majorca-beach.png">
-                <img src="images/majorca-cove.png">
+                <img src="images/majorca-waves.png" alt="waves crashing on cliffside">
+                <img src="images/majorca-beach.png" alt="majorca beach">
+                <img src="images/majorca-cove.png"  alt="clear water bay surrounded by vegetated rocky terrain">
                 
-            <!-------------- PLAN YOUR TRIP -------------->
+                <!-- PLAN YOUR TRIP -->
                 <section id="plan">
                     <h3>Plan Your Trip</h3>
                     <section>
@@ -52,7 +52,7 @@
                     </section>
 
                     <section>
-                        <h4></h4>
+                        <h4>Places to Stay</h4>
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6" />
@@ -101,39 +101,39 @@
                     </section>
                 </section>
 
-            <!-------------- TESTIMONIALS -------------->
+                <!-- TESTIMONIALS -->
                 <section id="testimonials">
                     <h3>Testimonials</h3>
                     <section>
                         <h4>Miranda Blake</h4>
-                        <img src="images/miranda-blake.png">
+                        <img src="images/miranda-blake.png" alt="Miranda Blake portrait">
                         <p>Traveling From: London, England</p>
                         <blockquote>“I traveled here for business, but my stay was extended. Now it is my home.”</blockquote>
                     </section>
 
                     <section>
                         <h4>Max Winter</h4>
-                        <img src="images/max-winter.png">
+                        <img src="images/max-winter.png" alt="Max Winter portrait">
                         <p>Traveling From: Berlin, Germany</p>
                         <blockquote>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer.”</blockquote>
                     </section>
 
                     <section>
                         <h4>Inés Villegoes</h4>
-                        <img src="images/ines-villegoes.png">
+                        <img src="images/ines-villegoes.png" alt="Inés Villegoes portrait">
                         <p>Traveling From: Barcelona, Spain</p>
                         <blockquote>“A very safe environment for all travelers.”</blockquote>
                     </section>
 
                     <section>
                         <h4>Carmen Lorenzo</h4>
-                        <img src="images/carmen-lorenzo.png">
+                        <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo portrait">
                         <p>Traveling From: Madrid, Spain</p>
                         <blockquote>“Live, laugh, love-- everything you need in Majorca."</blockquote>
                     </section>
                 </section>
                 
-            <!-------------- ABOUT YOUR DESTINATION -------------->
+                <!-- ABOUT YOUR DESTINATION -->
                 <section id="about-dest">
                     <h3>About Your Destination</h3>
                     <section>
@@ -183,7 +183,7 @@
                     </section>
                 </section>
 
-            <!-------------- CONTACT US -------------->
+                <!-- CONTACT US -->
                 <section id="contact">
                     <h3>Contact Us</h3>
 
@@ -221,24 +221,24 @@
                             <label for="destinations">Destination<span class="required">*</span></label>
                             <select id="destinations" name="Destinations" required>
                                 <option value="" disabled selected hidden>Choose your destination</option>
-                                <option value="Barcelona">Barcelona</option>
-                                <option value="Granad">Granada</option>
-                                <option value="Ibiza">Ibiza</option>
-                                <option value="Madrid">Madrid</option>
-                                <option value="Majorca">Majorca</option>
-                                <option value="Seville">Seville</option>
-                                <option value="Tenerife">Tenerife</option>
-                                <option value="Valencia">Valencia</option>
+                                <option value="barcelona">Barcelona</option>
+                                <option value="granada">Granada</option>
+                                <option value="ibiza">Ibiza</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="majorca">Majorca</option>
+                                <option value="seville">Seville</option>
+                                <option value="tenerife">Tenerife</option>
+                                <option value="valencia">Valencia</option>
                             </select>
 
                             <label for="travel-time">Travel Time<span class="required">*</span></label>
-                            <select>
+                            <select id="travel-time" name="Travel Time" required>
                                 <option value="" disabled selected hidden>Choose your travel time</option>
-                                <option value="Fall">Fall</option>
-                                <option value="Winter">Winter</option>
-                                <option value="Spring">Spring<option>
-                                <option value="Summer">Summer</option>
-                                <option value="Flexible">Flexible</option>
+                                <option value="fall">Fall</option>
+                                <option value="winter">Winter</option>
+                                <option value="spring">Spring</option>
+                                <option value="summer">Summer</option>
+                                <option value="flexible">Flexible</option>
                             </select>
                         </div>
                     </form>
@@ -248,12 +248,10 @@
         
         <footer>
             <p><small>Copyright &copy; 2021 Wunderlust</small></p>
-            <section id="legal">
-                <ul>
-                    <li><a href="#">Privacy Statement</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </section>
+            <ul>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
         </footer>
     </body>
 </html>
