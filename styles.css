@@ -64,13 +64,79 @@ table {
     --black: #000000;
 }
 
-/* >>> MOLLE */
 h1, h2, h3 {
     font-family: 'Molle', cursive;
 }
 
-/* >>> MONTSERRAT */
 h4, p, q, small, nav, button, form {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    margin: 0 auto;
+
+}
+
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+/* --PLAN YOUR TRIP-- */
+#plan {
+    margin: 0 auto;
+    background-color: var(--yellow);
+}
+#plan div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#plan section {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    background-color: var(--teal);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--white);
+}
+#plan h4 {
+    display: flex;
+    justify-content: center;
+    color: var(--black);
+    text-align: center;
+}
+#plan img {
+    width: 80%;
+}
+
+
+/* --ABOUT YOUR DESTINATION-- */
+#about {
+    background-color: var(--blue);
+}
+
+
+
+
+
+/* --- MEDIA QUERIES --- */
+@media screen and (min-width: 320px) {
+
+}
