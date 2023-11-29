@@ -147,13 +147,10 @@ nav label {
     position: absolute;
     z-index: 1;
     right: 0%;
-    top: 3%;
+    top: 5%;
     width: 40%;
 }
-/* nav label:hover {
-    background-color: var(--black);
-    color: var(--white);
-} */
+
 #menu-toggle {
     display: block;
     position: relative;
@@ -207,11 +204,6 @@ nav li:hover {
 }
 #menu-toggle input:checked ~ ul {
     right: 0%;
-}
-
-#menuToggle input:checked ~ ul, #menu-toggle input:checked ~ label {
-    display: block;
-    position: static;
 }
 
 
@@ -445,7 +437,7 @@ footer a {
         padding-bottom: 20px;
     }
     nav {
-        /* position: static; */
+        position: static;
         width: 100%;
         grid-column-start: span 2;
     }
@@ -456,6 +448,8 @@ footer a {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        position: static;
+        right: auto;
     }
     nav li {
         background-color: var(--white);
@@ -575,6 +569,7 @@ footer a {
         position: absolute;
         width: 50%;
         top: 0;
+        right: 0%;
     }
     nav ul {
         justify-content: space-evenly;
