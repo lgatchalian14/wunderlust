@@ -120,7 +120,7 @@ header {
     flex-direction: column;
     height: 100%;
     margin-bottom: 15px;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 header img {
     width: 35%;
@@ -136,21 +136,24 @@ header p {
 nav {
     display: block;
     position: absolute;
+    width: 100%;
+}
+nav label {
+    display: flex;
+    background-color: var(--yellow);
+    padding: 10px 25px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
     right: 0%;
     top: 3%;
     width: 40%;
 }
-nav label {
-    display: block;
-    background-color: var(--yellow);
-    padding: 10px 25px;
-    text-align: center;
-    z-index: 1;
-}
-nav label:hover {
+/* nav label:hover {
     background-color: var(--black);
     color: var(--white);
-}
+} */
 #menu-toggle {
     display: block;
     position: relative;
@@ -167,16 +170,49 @@ nav ul {
     color: var(--black);
     font-size: 0.8rem;
     font-weight: bold;
-    right: 100%;
-    display: none;
+    position: absolute;
+    right: -1600%;
 }
 nav li {
     background-color: var(--teal);
     border: 1px solid var(--black);
     padding: 15px;
 }
+nav a {
+    color: var(--black);
+}
+nav li:hover {
+    background-color: var(--yellow);
+    color: var(--white);
+    padding: 15px;
+    cursor: pointer;
+}
 
-#menutoggle input:checked
+#menu-toggle label:hover {
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+/* -- MENU TOGGLE -- */
+#menu-toggle input:checked + label {
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    position: static;
+    right: 100%;
+    top: 0%;
+    width: auto;
+}
+#menu-toggle input:checked ~ ul {
+    right: 0%;
+}
+
+#menuToggle input:checked ~ ul, #menu-toggle input:checked ~ label {
+    display: block;
+    position: static;
+}
 
 
 
@@ -409,7 +445,7 @@ footer a {
         padding-bottom: 20px;
     }
     nav {
-        position: static;
+        /* position: static; */
         width: 100%;
         grid-column-start: span 2;
     }
